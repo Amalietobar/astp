@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0aab2e51fd.js" crossorigin="anonymous"></script>
+    <title>"klar til byen"</title>
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick="HideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="ol.html">ALKOHOLFRIE ØL</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="merch.html">MERCH</a></li>
+      <li><a href="socialt.html">SOCIALT</a></li>
+      <li><a href="error.html">TRØJBORGBRYG</a></li>
+    </ul>  
+    <ul>
+      <li class="HideOnMobil"><a href="ol.html">ALKOHOLFRIE ØL</a></li>
+      <li class="HideOnMobil"><a href="blog.html">BLOG</a></li>  
+      <li class="HideOnMobil"><a href="merch.html">MERCH</a></li>
+      <li class="logo"><a href="index.html"><img src="/img/logo.png" alt="logo"></a></li>
+      <li class="HideOnMobil"><div class="custom-dropdown">
+        <button class="custom-dropbtn">SOCIALT</button>
+        <div class="custom-dropdown-content">
+          <a href="lob.html">Løbeklub</a>
+          <a href="cykel.html">Cykelklub</a>
+          <a href="mad.html">Madklub</a>
+        </div>
+      </div></li>
+      <li class="HideOnMobil"><div class="custom-dropdown">
+        <button class="custom-dropbtn">TRØJBORGBRYG</button>
+        <div class="custom-dropdown-content">
+          <a href="error.html">Om os</a>
+          <a href="error.html">Find os</a>
+        </div>
+      </div></li>
+      <li class="HideOnMobil"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></li>
+      <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></a></li>
+    </ul>
+  </nav>
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function HideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+
+
+<div class="ol-details">
+    <div class="ol-image">
+      <img src="/img/øl6.2.png" alt="Øl 5">
+    </div>
+    <div class="ol-info">
+      <h1>KTB "klar til byen"</h1>
+      <br>
+      <p>KTB eller "Klar Til Byen" er skabt til de dage, hvor du er i humør til at tage byen med storm. Uanset om det er en aften i byen med vennerne, en koncert eller bare en spontan fest, så er KTB din partner in crime.
+        <br>
+        <br>
+        Øllen har en let og forfriskende karakter, noter af citrus og en bitterhed der giver skaber en levende smag. En let maltet sødme tilføjer en ekstra dimension og gør KTB gør dig "klar til byen."</p>
+      <br>
+        <p>Pris: 25.00 DKK</p>
+        <br>
+        <label for="quantity">Antal:</label>
+        <input type="number" id="quantity" value="1" min="1">
+        <button onclick="addToCart()">Tilføj til kurv</button>
+        <div id="cart">
+            <ul id="cart-items"></ul>
+          </div>
+    </div>
+  </div>
+  <script>
+    function addToCart() {
+  const quantity = document.getElementById('quantity').value;
+  const itemName = 'Øl 1'; // Erstat dette med det faktiske navn på øllen
+  const itemPrice = 25; // Erstat dette med den faktiske pris på øllen
+
+  const total = quantity * itemPrice;
+  const cartItem = `${quantity} x ${itemName} - ${total} DKK`;
+
+  const cartItemsList = document.getElementById('cart-items');
+  const li = document.createElement('li');
+  li.appendChild(document.createTextNode(cartItem));
+  cartItemsList.appendChild(li);
+}
+</script>
+
+
+<footer>
+  <div class="footer">
+    <div class="col-1">
+      <h3>LINKS PÅ SIDEN</h3>
+      <a href="#">Alkoholfrie øl</a>
+      <a href="#">Blog</a>
+      <a href="#">Merch</a>
+      <a href="#">Socialt</a>
+      <a href="#">Om os</a>
+    </div>
+<div class="col-2">
+  <h3>NYHEDSBREV</h3>
+  <form>
+    <input type="email" placeholder="Din email:" required>
+    <br>
+    <button type="submit"> TILMELD DIG NU </button>
+  </form>
+</div>
+<div class="col-3">
+  <h3>KONTAKT OS</h3>
+  <p> Banegaardspladsen 20, 4, 3th <br> 8000 Aarhus C</p>
+  <div class="social-icons">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-tiktok"></i>
+    <i class="fa-brands fa-pinterest"></i>
+  </div>
+</div>
+</footer>
+</body>
+</html>

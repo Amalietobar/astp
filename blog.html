@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0aab2e51fd.js" crossorigin="anonymous"></script>
+    <title>Bloggen</title>
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick="HideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="ol.html">ALKOHOLFRIE ØL</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="merch.html">MERCH</a></li>
+      <li><a href="socialt.html">SOCIALT</a></li>
+      <li><a href="error.html">TRØJBORGBRYG</a></li>
+    </ul>  
+    <ul>
+      <li class="HideOnMobil"><a href="ol.html">ALKOHOLFRIE ØL</a></li>
+      <li class="HideOnMobil"><a href="blog.html">BLOG</a></li>  
+      <li class="HideOnMobil"><a href="merch.html">MERCH</a></li>
+      <li class="logo"><a href="index.html"><img src="/img/logo.png" alt="logo"></a></li>
+      <li class="HideOnMobil"><div class="custom-dropdown">
+        <button class="custom-dropbtn">SOCIALT</button>
+        <div class="custom-dropdown-content">
+          <a href="lob.html">Løbeklub</a>
+          <a href="cykel.html">Cykelklub</a>
+          <a href="mad.html">Madklub</a>
+        </div>
+      </div></li>
+      <li class="HideOnMobil"><div class="custom-dropdown">
+        <button class="custom-dropbtn">TRØJBORGBRYG</button>
+        <div class="custom-dropdown-content">
+          <a href="error.html">Om os</a>
+          <a href="error.html">Find os</a>
+        </div>
+      </div></li>
+      <li class="HideOnMobil"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></li>
+      <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></a></li>
+    </ul>
+  </nav>
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function HideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+
+    
+  <div class="blogcontainer">
+    <img src="/img/logoblog.png" alt="logo" class="blog">
+  </div>
+  
+<p class="artikel1_h3">
+    <br>
+    Uanset hvad er det altid lækkert at være opdateret. <br>
+    Her er et overblik over alt du skal vide for at være opdateret på TrøjborgBryg. <br>
+</p>
+
+  <section class="flexcontainer_saeson">
+      <div>
+          <img src="img/sweat.png" alt="forår" class="billede">
+      </div>
+      <div>
+          <h4 class="artikel1_h4">Nyt merchandise på vej</h4>
+          <p class="artikel1_p">
+            Fra varme huer og stilfulde sweatre, vil denne kollektion ikke kun holde dig varm, 
+            men også lade dig vise din kærlighed til TrøjborgBryg, uanset hvor du befinder dig.
+            <br>Hold øje med TrøjborgBrygs sociale medier og deres hjemmeside for at få mere information
+             om lanceringen af den eftertragtede ski-merchandise. 
+            Så kan du snart pakke din kuffert og tage TrøjborgBryg med på dine vinterlige eventyr.
+            <span class="laes-mere"><a href="#">Læs mere</a></span></p>
+      </div>
+  </section>
+
+  <section class="flexcontainer_saeson">
+      <div>
+          <img src="img/nytaar.png" alt="forår" class="billede">
+      </div>
+      <div>
+          <h4 class="artikel1_h4">Den nye NEW YEARS - ALE</h4>
+          <p class="artikel1_p">
+            TrøjborgBryg, kendt for at tænke ud af boksen, har gjort nytår
+             endnu mere festligt med deres seneste kreation: "NEW YEARS" - 
+            en sprudlende alkoholfri øl skabt til at løfte stemningen og 
+            skåle ind i det nye år på bedste vis! 
+            <br>Nytårsaften er traditionelt 
+            forbundet med boblende champagne, men TrøjborgBryg ønsker at ændre 
+            spillet og give folk en alkoholfri mulighed, der ikke går på kompromis
+             med festlighederne. "NEW YEARS" er en blanding af fest og smag, designet 
+             til at matche stemningen i de glitrende fyrværkerier og festlige sammenkomster.
+             <span class="laes-mere"><a href="#">Læs mere</a></span></p>
+            </div>
+
+  </section>
+  <section class="flexcontainer_saeson">
+    <div>
+        <img src="img/juul.png" alt="forår" class="billede">
+    </div>
+    <div>
+        <h4 class="artikel1_h4">Skal du køre hjem til jul?</h4>
+        <p class="artikel1_p">
+            Julen er sæsonen for samvær, kærlighed og hygge, og mange af os rejser 
+            langvejsfra for at tilbringe helligdagene med familie og venner.
+            Hvis du planlægger at køre hjem til jul og vil kombinere festlighederne 
+            med ansvar, så er TrøjborgBrygs alkoholfri øl den perfekte følgesvend til din rejse.
+             <br> "Vi ønsker, at folk skal kunne nyde julen fuldt ud, og samtidig være 
+             sikre på vejen," siger en talsperson fra TrøjborgBryg. 
+            "Vores alkoholfri øl er skabt til at være den perfekte 
+            løsning for dem, der vil kombinere fest og ansvar."
+            <span class="laes-mere"><a href="#">Læs mere</a></span></p>
+
+    </div>
+</section>
+
+<section class="flexcontainer_saeson">
+    <div>
+        <img src="img/pack.png" alt="forår" class="billede">
+    </div>
+    <div>
+        <h4 class="artikel1_h4">Nu kan du få en 6-pack!</h4>
+        <p class="artikel1_p">
+            Nu behøver du ikke at vælge mellem at have nok eller at have det bedste - du kan have begge dele!
+            For første gang nogensinde kan du tage hele festen med dig i en 6-pack af dine yndlings TrøjborgBryg-øl.
+            <br> Denne nyhed er en festlig måde at dele smagen af TrøjborgBryg med venner og familie.
+            Hold øje med dine lokale forhandlere eller besøg TrøjborgBrygs hjemmeside for at sikre dig, 
+            at du ikke går glip af muligheden for at tage festen med dig i en 6-pack af lækre alkoholfri øl.
+            <span class="laes-mere"><a href="#">Læs mere</a></span></p>
+    </div>
+</section>
+
+<section class="flexcontainer_saeson">
+    <div>
+        <img src="img/agf.png" alt="forår" class="billede">
+    </div>
+    <div>
+        <h4 class="artikel1_h4">Snart er vi med dig på stadion!</h4>
+        <p class="artikel1_p">
+            På AGF-stadion oplever fans i øjeblikket kun fadøl uden alkoholfrie alternativer. 
+            Men frygt ej, for snart vil Trøjborg Brygt introducere "Kom Så De Hvide" (KSDH) 
+            En alkoholfri innovation, der tilføjer et nyt element til stadion oplevelsen. 
+            <br> Så næste gang du hopper og hepper på AGF, kan du se frem til at skåle i den 
+            alkoholfrie glæde af "KSDH" og støtte holdet uden høj promille."Kom Så De Hvide"!
+            <span class="laes-mere"><a href="#">Læs mere</a></span></p>
+    </div>
+</section>
+
+
+
+<footer>
+  <div class="footer">
+    <div class="col-1">
+      <h3>LINKS PÅ SIDEN</h3>
+      <a href="#">Alkoholfrie øl</a>
+      <a href="#">Blog</a>
+      <a href="#">Merch</a>
+      <a href="#">Socialt</a>
+      <a href="#">Om os</a>
+    </div>
+<div class="col-2">
+  <h3>NYHEDSBREV</h3>
+  <form>
+    <input type="email" placeholder="Din email:" required>
+    <br>
+    <button type="submit"> TILMELD DIG NU </button>
+  </form>
+</div>
+<div class="col-3">
+  <h3>KONTAKT OS</h3>
+  <p> Banegaardspladsen 20, 4, 3th <br> 8000 Aarhus C</p>
+  <div class="social-icons">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-tiktok"></i>
+    <i class="fa-brands fa-pinterest"></i>
+  </div>
+</div>
+</footer>
+</body>
+</html>
